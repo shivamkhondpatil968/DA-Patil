@@ -2574,77 +2574,90 @@ padding-top:90px;
 
 }
 
-
 /* =========================================================
-   CLEAN MOBILE FIXES (no font/size/design changes)
+   REBUILT NAVIGATION & MOBILE RESPONSIVE
    ========================================================= */
 
 header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
     z-index:3000;
 }
 
-.floating-call,
-.floating-whatsapp,
-#topBtn{
-    z-index:2000;
+.navbar{
+    height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .menu-btn{
+    display:none;
+    font-size:28px;
     color:#0B3D91;
+    cursor:pointer;
+}
+
+.floating-call,
+.floating-whatsapp{
+    z-index:2500;
+}
+
+#topBtn{
+    z-index:2500;
 }
 
 @media (max-width:992px){
 
-    .navbar{
-        padding:18px 15px;
-    }
-
     .menu-btn{
         display:block;
-        color:#0B3D91;
+        position:relative;
         z-index:3100;
     }
 
     .nav-menu{
         position:fixed;
         top:90px;
-        right:-100%;
+        left:0;
+        right:auto;
         width:100%;
         height:calc(100vh - 90px);
         background:#ffffff;
         display:flex;
         flex-direction:column;
-        justify-content:flex-start;
         align-items:center;
-        padding-top:40px;
+        justify-content:flex-start;
         gap:30px;
-        transition:.35s;
+        padding-top:35px;
+        transform:translateX(100%);
+        transition:transform .35s ease;
         z-index:3050;
-        overflow-y:auto;
+    }
+
+    .nav-menu.active{
+        transform:translateX(0);
     }
 
     .nav-menu a{
         color:#0B3D91 !important;
     }
-
-    .nav-menu.active{
-        right:0;
-    }
 }
 
 @media (max-width:768px){
 
-    .navbar{
-        padding:18px 15px;
-    }
-
-    .nav-menu{
-        top:90px;
-        height:calc(100vh - 90px);
+    .logo img{
+        height:55px;
     }
 
     .floating-call,
     .floating-whatsapp{
         right:15px;
+    }
+
+    #topBtn{
+        left:15px;
     }
 }
