@@ -326,17 +326,3 @@ ${message}`;
     });
 
 }
-window.addEventListener('DOMContentLoaded', () => {
-  const scrollBtn = document.querySelector('.scroll-top');
-  if (scrollBtn && scrollBtn.parentElement !== document.body) {
-    document.body.appendChild(scrollBtn);
-  }
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add('show');
-    } else {
-      scrollBtn.classList.remove('show');
-    }
-  });
-});
