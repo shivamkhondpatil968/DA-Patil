@@ -427,7 +427,7 @@ header.scrolled .menu-btn{
 
     color:#fff;
 
-    max-width:850px;
+    max-width:550px;
 
 }
 
@@ -530,7 +530,7 @@ justify-content:center;
 
 .hero-left img{
 
-width:300px;
+width:250px;
 
 height:300px;
 
@@ -576,10 +576,10 @@ margin-bottom:35px;
 
 line-height:32px;
 
-max-width:650px;
+max-width:550px;
 
 }
-@media(max-width:992px){
+@media(max-width:600px){
 
 .hero-grid{
 
@@ -756,9 +756,9 @@ height:280px;
 
 .about-circle{
 
-    width:330px;
+    width:300px;
 
-    height:330px;
+    height:300px;
 
     border-radius:50%;
 
