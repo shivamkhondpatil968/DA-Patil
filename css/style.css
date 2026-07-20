@@ -7,7 +7,6 @@
 /*=========================
       GOOGLE FONTS
 =========================*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 /*=========================
@@ -237,7 +236,7 @@ header.scrolled{
 
     display:flex;
 
-    align-items:center;
+   
 
     gap:15px;
 
@@ -245,9 +244,9 @@ header.scrolled{
 
 .logo-icon{
 
-    width:130px;
+    width:100px;
 
-    height:100px;
+    height:80px;
 
     border-radius:50%;
 
@@ -257,9 +256,7 @@ header.scrolled{
 
     display:flex;
 
-    justify-content:center;
-
-    align-items:center;
+    
 
     font-size:26px;
 
@@ -269,7 +266,7 @@ header.scrolled{
 
 display:flex;
 
-align-items:center;
+
 
 }
 
@@ -285,19 +282,9 @@ transition:.3s;
 
 }
 
-.logo img:hover{
 
-transform:scale(1.05);
 
-}@media(max-width:768px){
 
-.logo img{
-
-height:55px;
-
-}
-
-}
 
 header.scrolled .logo-icon{
 
@@ -427,7 +414,7 @@ header.scrolled .menu-btn{
 
     color:#fff;
 
-    max-width:550px;
+    max-width:850px;
 
 }
 
@@ -530,7 +517,7 @@ justify-content:center;
 
 .hero-left img{
 
-width:250px;
+width:300px;
 
 height:300px;
 
@@ -576,10 +563,10 @@ margin-bottom:35px;
 
 line-height:32px;
 
-max-width:550px;
+max-width:650px;
 
 }
-@media(max-width:600px){
+@media(max-width:992px){
 
 .hero-grid{
 
@@ -756,9 +743,9 @@ height:280px;
 
 .about-circle{
 
-    width:300px;
+    width:330px;
 
-    height:300px;
+    height:330px;
 
     border-radius:50%;
 
