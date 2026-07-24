@@ -236,7 +236,7 @@ header.scrolled{
 
     display:flex;
 
-   
+    align-items:center;
 
     gap:15px;
 
@@ -244,9 +244,9 @@ header.scrolled{
 
 .logo-icon{
 
-    width:100px;
+    width:130px;
 
-    height:80px;
+    height:100px;
 
     border-radius:50%;
 
@@ -256,7 +256,9 @@ header.scrolled{
 
     display:flex;
 
-    
+    justify-content:center;
+
+    align-items:center;
 
     font-size:26px;
 
@@ -266,7 +268,7 @@ header.scrolled{
 
 display:flex;
 
-
+align-items:center;
 
 }
 
@@ -282,9 +284,19 @@ transition:.3s;
 
 }
 
+.logo img:hover{
 
+transform:scale(1.05);
 
+}@media(max-width:768px){
 
+.logo img{
+
+height:55px;
+
+}
+
+}
 
 header.scrolled .logo-icon{
 
@@ -454,8 +466,7 @@ header.scrolled .menu-btn{
 
 .hero-buttons{
 
-    display:flex;
-
+    flex-direction:column;
     justify-content:center;
 
     gap:20px;
@@ -541,7 +552,7 @@ color:rgb(47, 73, 83);
 
 .hero-right h1{
 
-font-size:60px;
+font-size:34px;
 
 margin-bottom:15px;
 
@@ -580,9 +591,9 @@ gap:40px;
 
 .hero-left img{
 
-width:230px;
+width:180px;
 
-height:230px;
+height:180px;
 
 }
 
@@ -662,7 +673,7 @@ font-size:42px;
 
 .section-heading h2{
 
-    font-size:42px;
+    font-size:30px;
 
     color:var(--primary);
 
@@ -695,7 +706,7 @@ font-size:42px;
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
 
     gap:70px;
 
@@ -797,7 +808,7 @@ height:280px;
 
 .about-content h3{
 
-    font-size:38px;
+    font-size:28px;
 
     color:var(--primary);
 
@@ -1692,7 +1703,7 @@ CONTACT | MAP | FOOTER | FLOATING BUTTONS
 
     display:grid;
 
-    grid-template-columns:1.2fr .8fr;
+    grid-template-columns:1fr;
 
     gap:50px;
 
@@ -1708,7 +1719,7 @@ CONTACT | MAP | FOOTER | FLOATING BUTTONS
 
     background:#fff;
 
-    padding:40px;
+    padding:25px;
 
     border-radius:20px;
 
@@ -1885,7 +1896,7 @@ footer{
 
     display:grid;
 
-    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    grid-template-columns:1fr;
 
     gap:40px;
 
@@ -2025,9 +2036,9 @@ hr{
 
     right:25px;
 
-    width:60px;
+    width:50px;
 
-    height:60px;
+    height:50px;
 
     border-radius:50%;
 
